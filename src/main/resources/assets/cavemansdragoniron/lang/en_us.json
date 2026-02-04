@@ -3,5 +3,7 @@
   "item.cavemansdragoniron.dragon_iron_ingot" : "Dragon Iron Ingot",
 
 
-  "block.cavemansdragoniron.dragon_iron_block" : "Dragon Iron Block"
+  "block.cavemansdragoniron.dragon_iron_block" : "Dragon Iron Block",
+
+  "creativetab.cavemansdragoniron.cavemans_dragon_iron_items": "Caveman's Dragon Iron"
 }
