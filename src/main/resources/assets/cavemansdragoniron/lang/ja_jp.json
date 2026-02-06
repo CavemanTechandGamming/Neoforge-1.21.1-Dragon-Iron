@@ -1,0 +1,24 @@
+{
+  "item.cavemansdragoniron.dragon_iron_armor_boots": "ドラゴンアイアンブーツ",
+  "item.cavemansdragoniron.dragon_iron_armor_chestplate": "ドラゴンアイアンチェストプレート",
+  "item.cavemansdragoniron.dragon_iron_armor_helmet": "ドラゴンアイアンヘルメット",
+  "item.cavemansdragoniron.dragon_iron_armor_leggings": "ドラゴンアイアンレギンス",
+  "item.cavemansdragoniron.dragon_iron_axe": "ドラゴンアイアンアックス",
+  "item.cavemansdragoniron.dragon_iron_hoe": "ドラゴンアイアンホー",
+  "item.cavemansdragoniron.dragon_iron_ingot": "ドラゴンアイアンインゴット",
+  "item.cavemansdragoniron.dragon_iron_nugget": "ドラゴンアイアンナゲット",
+  "item.cavemansdragoniron.dragon_iron_pickaxe": "ドラゴンアイアンピッケル",
+  "item.cavemansdragoniron.dragon_iron_shovel": "ドラゴンアイアンシャベル",
+  "item.cavemansdragoniron.dragon_iron_sword": "ドラゴンアイアンソード",
+
+
+
+  "block.cavemansdragoniron.dragon_glass_block": "ドラゴングラスブロック",
+  "block.cavemansdragoniron.dragon_glass_pane": "ドラゴングラスパネル",
+  "block.cavemansdragoniron.dragon_iron_block": "ドラゴンアイアンブロック",
+  "block.cavemansdragoniron.fancy_dragon_iron_block": "上品なドラゴンアイアンブロック",
+
+
+
+  "creativetab.cavemansdragoniron.cavemans_dragon_iron_items": "ケイブマンのドラゴンアイアン"
+}

@@ -1,0 +1,24 @@
+{
+  "item.cavemansdragoniron.dragon_iron_armor_boots": "Бронзовые сапоги Драконьего железа",
+  "item.cavemansdragoniron.dragon_iron_armor_chestplate": "Нагрудник Драконьего железа",
+  "item.cavemansdragoniron.dragon_iron_armor_helmet": "Шлем Драконьего железа",
+  "item.cavemansdragoniron.dragon_iron_armor_leggings": "Поножи Драконьего железа",
+  "item.cavemansdragoniron.dragon_iron_axe": "Топор Драконьего железа",
+  "item.cavemansdragoniron.dragon_iron_hoe": "Мотыга Драконьего железа",
+  "item.cavemansdragoniron.dragon_iron_ingot": "Слиток Драконьего железа",
+  "item.cavemansdragoniron.dragon_iron_nugget": "Кусочек Драконьего железа",
+  "item.cavemansdragoniron.dragon_iron_pickaxe": "Кирка Драконьего железа",
+  "item.cavemansdragoniron.dragon_iron_shovel": "Лопата Драконьего железа",
+  "item.cavemansdragoniron.dragon_iron_sword": "Меч из Драконьего железа",
+
+
+
+  "block.cavemansdragoniron.dragon_glass_block": "Блок Драконьего стекла",
+  "block.cavemansdragoniron.dragon_glass_pane": "Панель Драконьего стекла",
+  "block.cavemansdragoniron.dragon_iron_block": "Блок Драконьего железа",
+  "block.cavemansdragoniron.fancy_dragon_iron_block": "Элегантный блок из Драконьего железа",
+
+
+
+  "creativetab.cavemansdragoniron.cavemans_dragon_iron_items": "Драконье железо Caveman"
+}
