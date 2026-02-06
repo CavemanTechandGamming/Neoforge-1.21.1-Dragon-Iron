@@ -20,7 +20,11 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> DRAGON_IRON_BLOCK = registerBlock("dragon_iron_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .sound(SoundType.METAL).strength(20f, 2400f).requiresCorrectToolForDrops().pushReaction(PushReaction.IGNORE)));
+                    .sound(SoundType.METAL)
+                    .strength(20f, 2400f)
+                    .requiresCorrectToolForDrops()
+                    .pushReaction(PushReaction.IGNORE)
+            ));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
