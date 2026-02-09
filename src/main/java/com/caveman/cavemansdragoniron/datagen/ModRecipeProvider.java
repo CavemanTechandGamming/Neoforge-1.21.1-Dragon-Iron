@@ -1,4 +1,60 @@
 package com.caveman.cavemansdragoniron.datagen;
 
-public class ModRecipeProvider {
+import com.caveman.cavemansdragoniron.block.ModBlocks;
+import com.caveman.cavemansdragoniron.item.ModItems;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.PackOutput;
+import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
+import net.neoforged.neoforge.common.conditions.IConditionBuilder;
+
+import java.util.concurrent.CompletableFuture;
+
+public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
+    public ModRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+        super(output, registries);
+    }
+
+
+    @Override
+    protected void buildRecipes(RecipeOutput recipeOutput) {
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.DRAGON_IRON_INGOT.get())
+                .pattern("NNN")
+                .pattern("NNN")
+                .pattern("NNN")
+                .define('N', ModItems.DRAGON_IRON_NUGGET.get())
+                .unlockedBy("has_dragon_iron_nugget", has(ModItems.DRAGON_IRON_NUGGET))
+                .save(recipeOutput, "cavemansdragoniron:dragon_iron_ingot_from_nuggets");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.DRAGON_IRON_INGOT.get(), 4)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("CAC")
+                .define('A', Items.OBSIDIAN)
+                .define('B', Items.DRAGON_BREATH)
+                .define('C', Items.IRON_INGOT)
+                .unlockedBy("has_dragon_breath", has(Items.DRAGON_BREATH))
+                .save(recipeOutput, "cavemansdragoniron:dragon_iron_ingot_from_scratch");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.DRAGON_IRON_BLOCK.get())
+                .pattern("III")
+                .pattern("III")
+                .pattern("III")
+                .define('I', ModItems.DRAGON_IRON_INGOT.get())
+                .unlockedBy("has_dragon_iron_ingot", has(ModItems.DRAGON_IRON_INGOT))
+                .save(recipeOutput, "cavemansdragoniron:dragon_iron_block_from_ingots");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.DRAGON_IRON_NUGGET.get(), 9)
+                .requires(ModItems.DRAGON_IRON_INGOT)
+                .unlockedBy("has_dragon_iron_ingot2", has(ModItems.DRAGON_IRON_INGOT))
+                .save(recipeOutput, "cavemansdragoniron:dragon_iron_nuggets_from_ingot");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.DRAGON_IRON_INGOT.get(), 9)
+                .requires(ModBlocks.DRAGON_IRON_BLOCK)
+                .unlockedBy("has_dragon_iron_block", has(ModBlocks.DRAGON_IRON_BLOCK))
+                .save(recipeOutput, "cavemansdragoniron:dragon_iron_ingots_from_block");
+
+    }
 }

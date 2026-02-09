@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "cavemansdragoniron:dragon_iron_block"
+      "item": "cavemansdragoniron:dragon_iron_ingot"
     }
   ],
   "result": {
-    "id": "cavemansdragoniron:dragon_iron_ingot",
-    "count": 9
+    "count": 9,
+    "id": "cavemansdragoniron:dragon_iron_nugget"
   }
 }
