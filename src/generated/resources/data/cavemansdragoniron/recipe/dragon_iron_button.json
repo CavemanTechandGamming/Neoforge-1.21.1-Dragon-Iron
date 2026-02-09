@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "dragon_iron_block",
+  "ingredients": [
+    {
+      "item": "cavemansdragoniron:dragon_iron_nugget"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cavemansdragoniron:dragon_iron_button"
+  }
+}

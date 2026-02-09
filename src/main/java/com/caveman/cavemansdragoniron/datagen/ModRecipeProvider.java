@@ -7,6 +7,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.concurrent.CompletableFuture;
@@ -48,13 +49,49 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.DRAGON_IRON_NUGGET.get(), 9)
                 .requires(ModItems.DRAGON_IRON_INGOT)
-                .unlockedBy("has_dragon_iron_ingot2", has(ModItems.DRAGON_IRON_INGOT))
+                .unlockedBy("has_dragon_iron_ingot", has(ModItems.DRAGON_IRON_INGOT))
                 .save(recipeOutput, "cavemansdragoniron:dragon_iron_nuggets_from_ingot");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.DRAGON_IRON_INGOT.get(), 9)
                 .requires(ModBlocks.DRAGON_IRON_BLOCK)
                 .unlockedBy("has_dragon_iron_block", has(ModBlocks.DRAGON_IRON_BLOCK))
                 .save(recipeOutput, "cavemansdragoniron:dragon_iron_ingots_from_block");
+
+        stairBuilder(ModBlocks.DRAGON_IRON_STAIRS.get(), Ingredient.of(ModBlocks.DRAGON_IRON_BLOCK))
+                .group("dragon_iron_block")
+                .unlockedBy("has_dragon_iron_block", has(ModBlocks.DRAGON_IRON_BLOCK))
+                .save(recipeOutput);
+
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRAGON_IRON_SLAB.get(), ModBlocks.DRAGON_IRON_BLOCK.get());
+
+        buttonBuilder(ModBlocks.DRAGON_IRON_BUTTON.get(), Ingredient.of(ModItems.DRAGON_IRON_NUGGET.get()))
+                .group("dragon_iron_block")
+                .unlockedBy("has_dragon_iron_nugget", has(ModItems.DRAGON_IRON_NUGGET.get()))
+                .save(recipeOutput);
+
+        pressurePlate(recipeOutput, ModBlocks.DRAGON_IRON_PRESSURE_PLATE.get(), ModItems.DRAGON_IRON_NUGGET.get());
+
+        fenceBuilder(ModBlocks.DRAGON_IRON_FENCE.get(), Ingredient.of(ModBlocks.DRAGON_IRON_BLOCK.get()))
+                .group("dragon_iron_block")
+                .unlockedBy("has_dragon_iron_block", has(ModBlocks.DRAGON_IRON_BLOCK.get()))
+                .save(recipeOutput);
+
+        fenceGateBuilder(ModBlocks.DRAGON_IRON_FENCE_GATE.get(), Ingredient.of(ModBlocks.DRAGON_IRON_BLOCK.get()))
+                .group("dragon_iron_block")
+                .unlockedBy("has_dragon_iron_block", has(ModBlocks.DRAGON_IRON_BLOCK.get()))
+                .save(recipeOutput);
+
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRAGON_IRON_WALL.get(), ModBlocks.DRAGON_IRON_BLOCK.get());
+
+        doorBuilder(ModBlocks.DRAGON_IRON_DOOR.get(), Ingredient.of(ModBlocks.DRAGON_IRON_BLOCK.get()))
+                .group("dragon_iron_block")
+                .unlockedBy("has_dragon_iron_block", has(ModBlocks.DRAGON_IRON_BLOCK.get()))
+                .save(recipeOutput);
+
+        trapdoorBuilder(ModBlocks.DRAGON_IRON_TRAP_DOOR.get(), Ingredient.of(ModBlocks.DRAGON_IRON_BLOCK.get()))
+                .group("dragon_iron_block")
+                .unlockedBy("has_dragon_iron_block", has(ModBlocks.DRAGON_IRON_BLOCK.get()))
+                .save(recipeOutput);
 
     }
 }

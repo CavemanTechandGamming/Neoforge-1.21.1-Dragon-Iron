@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "cavemansdragoniron:block/dragon_iron_block"
+  }
+}

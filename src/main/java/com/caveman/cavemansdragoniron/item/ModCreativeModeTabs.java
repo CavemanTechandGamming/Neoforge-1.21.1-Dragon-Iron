@@ -22,6 +22,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.DRAGON_IRON_NUGGET);
                         output.accept(ModItems.DRAGON_IRON_INGOT);
                         output.accept(ModBlocks.DRAGON_IRON_BLOCK);
+                        output.accept(ModBlocks.DRAGON_IRON_SLAB);
+                        output.accept(ModBlocks.DRAGON_IRON_STAIRS);
+                        output.accept(ModBlocks.DRAGON_IRON_PRESSURE_PLATE);
+                        output.accept(ModBlocks.DRAGON_IRON_BUTTON);
+                        output.accept(ModBlocks.DRAGON_IRON_FENCE);
+                        output.accept(ModBlocks.DRAGON_IRON_FENCE_GATE);
+                        output.accept(ModBlocks.DRAGON_IRON_WALL);
+                        output.accept(ModBlocks.DRAGON_IRON_TRAP_DOOR);
+                        output.accept(ModBlocks.DRAGON_IRON_DOOR);
                     }))
                     .build());
 

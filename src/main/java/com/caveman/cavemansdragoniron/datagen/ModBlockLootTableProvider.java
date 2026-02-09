@@ -28,6 +28,19 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         //Blocks that drop themselves.
         dropSelf(ModBlocks.DRAGON_IRON_BLOCK.get());
+        dropSelf(ModBlocks.DRAGON_IRON_STAIRS.get());
+        dropSelf(ModBlocks.DRAGON_IRON_BUTTON.get());
+        dropSelf(ModBlocks.DRAGON_IRON_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.DRAGON_IRON_FENCE.get());
+        dropSelf(ModBlocks.DRAGON_IRON_FENCE_GATE.get());
+        dropSelf(ModBlocks.DRAGON_IRON_WALL.get());
+        dropSelf(ModBlocks.DRAGON_IRON_TRAP_DOOR.get());
+
+        //How to deal with doors because they're weird.
+        add(ModBlocks.DRAGON_IRON_DOOR.get(), block -> createDoorTable(ModBlocks.DRAGON_IRON_DOOR.get()));
+
+        //How to deal with slabs because they're weird.
+        add(ModBlocks.DRAGON_IRON_SLAB.get(), block -> createSlabItemTable(ModBlocks.DRAGON_IRON_SLAB.get()));
 
         //An example of an ore block that only drops one ore.
         //add(ModBlocks.BISMUTH_ORE.get(),

@@ -19,19 +19,64 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.DRAGON_IRON_BLOCK.get());
+                .add(ModBlocks.DRAGON_IRON_BLOCK.get())
+                .add(ModBlocks.DRAGON_IRON_BUTTON.get())
+                .add(ModBlocks.DRAGON_IRON_DOOR.get())
+                .add(ModBlocks.DRAGON_IRON_FENCE.get())
+                .add(ModBlocks.DRAGON_IRON_FENCE_GATE.get())
+                .add(ModBlocks.DRAGON_IRON_PRESSURE_PLATE.get())
+                .add(ModBlocks.DRAGON_IRON_SLAB.get())
+                .add(ModBlocks.DRAGON_IRON_STAIRS.get())
+                .add(ModBlocks.DRAGON_IRON_TRAP_DOOR.get())
+                .add(ModBlocks.DRAGON_IRON_WALL.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.DRAGON_IRON_BLOCK.get());
+                .add(ModBlocks.DRAGON_IRON_BLOCK.get())
+                .add(ModBlocks.DRAGON_IRON_BUTTON.get())
+                .add(ModBlocks.DRAGON_IRON_DOOR.get())
+                .add(ModBlocks.DRAGON_IRON_FENCE.get())
+                .add(ModBlocks.DRAGON_IRON_FENCE_GATE.get())
+                .add(ModBlocks.DRAGON_IRON_PRESSURE_PLATE.get())
+                .add(ModBlocks.DRAGON_IRON_SLAB.get())
+                .add(ModBlocks.DRAGON_IRON_STAIRS.get())
+                .add(ModBlocks.DRAGON_IRON_TRAP_DOOR.get())
+                .add(ModBlocks.DRAGON_IRON_WALL.get());
 
         tag(BlockTags.BEACON_BASE_BLOCKS)
                 .add(ModBlocks.DRAGON_IRON_BLOCK.get());
 
         tag(BlockTags.DRAGON_IMMUNE)
-                .add(ModBlocks.DRAGON_IRON_BLOCK.get());
+                .add(ModBlocks.DRAGON_IRON_BLOCK.get())
+                .add(ModBlocks.DRAGON_IRON_BUTTON.get())
+                .add(ModBlocks.DRAGON_IRON_DOOR.get())
+                .add(ModBlocks.DRAGON_IRON_FENCE.get())
+                .add(ModBlocks.DRAGON_IRON_FENCE_GATE.get())
+                .add(ModBlocks.DRAGON_IRON_PRESSURE_PLATE.get())
+                .add(ModBlocks.DRAGON_IRON_SLAB.get())
+                .add(ModBlocks.DRAGON_IRON_STAIRS.get())
+                .add(ModBlocks.DRAGON_IRON_TRAP_DOOR.get())
+                .add(ModBlocks.DRAGON_IRON_WALL.get());
 
         tag(BlockTags.WITHER_IMMUNE)
-                .add(ModBlocks.DRAGON_IRON_BLOCK.get());
+                .add(ModBlocks.DRAGON_IRON_BLOCK.get())
+                .add(ModBlocks.DRAGON_IRON_BUTTON.get())
+                .add(ModBlocks.DRAGON_IRON_DOOR.get())
+                .add(ModBlocks.DRAGON_IRON_FENCE.get())
+                .add(ModBlocks.DRAGON_IRON_FENCE_GATE.get())
+                .add(ModBlocks.DRAGON_IRON_PRESSURE_PLATE.get())
+                .add(ModBlocks.DRAGON_IRON_SLAB.get())
+                .add(ModBlocks.DRAGON_IRON_STAIRS.get())
+                .add(ModBlocks.DRAGON_IRON_TRAP_DOOR.get())
+                .add(ModBlocks.DRAGON_IRON_WALL.get());
+
+        tag(BlockTags.FENCES)
+                .add(ModBlocks.DRAGON_IRON_FENCE.get());
+
+        tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.DRAGON_IRON_FENCE_GATE.get());
+
+        tag(BlockTags.WALLS)
+                .add(ModBlocks.DRAGON_IRON_WALL.get());
 
 
 

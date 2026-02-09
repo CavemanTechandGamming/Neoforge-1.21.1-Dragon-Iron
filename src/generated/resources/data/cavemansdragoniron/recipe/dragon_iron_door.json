@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "dragon_iron_block",
+  "key": {
+    "#": {
+      "item": "cavemansdragoniron:dragon_iron_block"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "cavemansdragoniron:dragon_iron_door"
+  }
+}

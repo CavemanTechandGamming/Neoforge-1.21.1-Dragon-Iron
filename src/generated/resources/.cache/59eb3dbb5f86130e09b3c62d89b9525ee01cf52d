@@ -1,2 +1,11 @@
-// 1.21.1	2026-02-06T18:45:34.9062172	Loot Tables
+// 1.21.1	2026-02-09T17:32:59.836285	Loot Tables
 43bede5791fcfc99195c4b7edb7ac836f08a73d9 data/cavemansdragoniron/loot_table/blocks/dragon_iron_block.json
+08ef13f94751aace47cfed63e769319d8ee173bd data/cavemansdragoniron/loot_table/blocks/dragon_iron_button.json
+79b268fee1936ed13d853564d639a131fcf39574 data/cavemansdragoniron/loot_table/blocks/dragon_iron_door.json
+433701454f68b6cd357d38b7749bf4519ee9ee03 data/cavemansdragoniron/loot_table/blocks/dragon_iron_fence.json
+a639671cca71b2ba7782a27915d632b8ce52f88d data/cavemansdragoniron/loot_table/blocks/dragon_iron_fence_gate.json
+acd9d07bc05ca2396f94553e20f75292b34889be data/cavemansdragoniron/loot_table/blocks/dragon_iron_pressure_plate.json
+7a50dcf6b50714d151cb2aae69ca365b0c0f9ebf data/cavemansdragoniron/loot_table/blocks/dragon_iron_slab.json
+70295e209ff9a5616f0920643a71d3e577bc8e13 data/cavemansdragoniron/loot_table/blocks/dragon_iron_stairs.json
+daa5ed3394cf087f45cbe8946452d4408d6a460b data/cavemansdragoniron/loot_table/blocks/dragon_iron_trap_door.json
+6246409788014cca58af57e488a5e9dd345fe210 data/cavemansdragoniron/loot_table/blocks/dragon_iron_wall.json

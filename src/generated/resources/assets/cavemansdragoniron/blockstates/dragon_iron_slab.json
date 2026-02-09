@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cavemansdragoniron:block/dragon_iron_slab"
+    },
+    "type=double": {
+      "model": "cavemansdragoniron:block/dragon_iron_block"
+    },
+    "type=top": {
+      "model": "cavemansdragoniron:block/dragon_iron_slab_top"
+    }
+  }
+}

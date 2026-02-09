@@ -1,0 +1,9 @@
+// 1.21.1	2026-02-09T18:21:16.306586	Tags for minecraft:block mod id cavemansdragoniron
+28ad9b3f8f3db04ed71fc7fe36bffcaf3d90391f data/minecraft/tags/block/beacon_base_blocks.json
+673fff7e14d3f9015a2e0bee0b37bfd3feea7f8a data/minecraft/tags/block/dragon_immune.json
+e555d47a367bfa63346b40b9ed31414c81a72187 data/minecraft/tags/block/fences.json
+15683f4e9c4e0f1fb3c3b162f8ee566d6f9c2262 data/minecraft/tags/block/fence_gates.json
+673fff7e14d3f9015a2e0bee0b37bfd3feea7f8a data/minecraft/tags/block/mineable/pickaxe.json
+673fff7e14d3f9015a2e0bee0b37bfd3feea7f8a data/minecraft/tags/block/needs_iron_tool.json
+7b95187c939c1fd7ea314159537466093a3fa070 data/minecraft/tags/block/walls.json
+673fff7e14d3f9015a2e0bee0b37bfd3feea7f8a data/minecraft/tags/block/wither_immune.json

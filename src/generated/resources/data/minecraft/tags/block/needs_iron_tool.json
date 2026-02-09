@@ -1,5 +1,14 @@
 {
   "values": [
-    "cavemansdragoniron:dragon_iron_block"
+    "cavemansdragoniron:dragon_iron_block",
+    "cavemansdragoniron:dragon_iron_button",
+    "cavemansdragoniron:dragon_iron_door",
+    "cavemansdragoniron:dragon_iron_fence",
+    "cavemansdragoniron:dragon_iron_fence_gate",
+    "cavemansdragoniron:dragon_iron_pressure_plate",
+    "cavemansdragoniron:dragon_iron_slab",
+    "cavemansdragoniron:dragon_iron_stairs",
+    "cavemansdragoniron:dragon_iron_trap_door",
+    "cavemansdragoniron:dragon_iron_wall"
   ]
 }

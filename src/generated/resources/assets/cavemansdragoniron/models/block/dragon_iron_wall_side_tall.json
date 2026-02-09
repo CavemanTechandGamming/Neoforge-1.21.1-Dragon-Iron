@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side_tall",
+  "textures": {
+    "wall": "cavemansdragoniron:block/dragon_iron_block"
+  }
+}
