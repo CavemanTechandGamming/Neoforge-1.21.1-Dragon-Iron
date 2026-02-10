@@ -1,7 +1,13 @@
-// 1.21.1	2026-02-09T17:32:59.8342844	Item Models: cavemansdragoniron
+// 1.21.1	2026-02-10T15:38:14.6890853	Item Models: cavemansdragoniron
+492fae0ff2054395af6deae4a481d3a22d9cbf1e assets/cavemansdragoniron/models/item/dragon_iron_axe.json
 0281bba8b501d9f4c29dc5f76d3e4d9b014d3c92 assets/cavemansdragoniron/models/item/dragon_iron_button.json
 08ba8a8a0ccfdf12257bdf26318cc8baf2f7b00f assets/cavemansdragoniron/models/item/dragon_iron_door.json
 f49ecf0bb27e6e41960732e259b5bb3d978ff15a assets/cavemansdragoniron/models/item/dragon_iron_fence.json
+d081297ca2d66f712b279f7021e6278950bd6ad9 assets/cavemansdragoniron/models/item/dragon_iron_hammer.json
+3472fa2367e598410c4bbea853ec8915c620f097 assets/cavemansdragoniron/models/item/dragon_iron_hoe.json
 62793238e96f43d183976f91ebc2cc383e7940d0 assets/cavemansdragoniron/models/item/dragon_iron_ingot.json
 52d64d5709f7675bb369997290f908e1c543d2fa assets/cavemansdragoniron/models/item/dragon_iron_nugget.json
+b525c4d48fd6ddacd2cee7d2d491fd1bb2cbe3f2 assets/cavemansdragoniron/models/item/dragon_iron_pickaxe.json
+44df14d165a29e45df59c2c22acb52e2a92627b0 assets/cavemansdragoniron/models/item/dragon_iron_shovel.json
+956a4fd44de2a6026414977dffe0512b03e1526c assets/cavemansdragoniron/models/item/dragon_iron_sword.json
 af60aaef551a55706873a42de3a649cc1fb4d148 assets/cavemansdragoniron/models/item/dragon_iron_wall.json

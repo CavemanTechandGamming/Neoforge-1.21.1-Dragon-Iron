@@ -21,6 +21,7 @@ public class ModLanguageProvider extends LanguageProvider {
         add("item.cavemansdragoniron.dragon_iron_armor_helmet", "Dragon Iron Helmet");
         add("item.cavemansdragoniron.dragon_iron_armor_leggings", "Dragon Iron Leggings");
         add("item.cavemansdragoniron.dragon_iron_axe", "Dragon Iron Axe");
+        add("item.cavemansdragoniron.dragon_iron_hammer", "Dragon Iron Hammer");
         add("item.cavemansdragoniron.dragon_iron_hoe", "Dragon Iron Hoe");
         add("item.cavemansdragoniron.dragon_iron_ingot", "Dragon Iron Ingot");
         add("item.cavemansdragoniron.dragon_iron_nugget", "Dragon Iron Nugget");

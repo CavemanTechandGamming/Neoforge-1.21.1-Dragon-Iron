@@ -2,6 +2,7 @@ package com.caveman.cavemansdragoniron.datagen;
 
 import com.caveman.cavemansdragoniron.CavemansDragonIron;
 import com.caveman.cavemansdragoniron.block.ModBlocks;
+import com.caveman.cavemansdragoniron.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -77,6 +78,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.WALLS)
                 .add(ModBlocks.DRAGON_IRON_WALL.get());
+
+        tag(ModTags.Blocks.NEEDS_DRAGON_IRON_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_DRAGON_IRON_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(ModTags.Blocks.NEEDS_DRAGON_IRON_TOOL);
 
 
 

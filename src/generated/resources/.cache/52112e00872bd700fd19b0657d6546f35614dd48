@@ -1,4 +1,6 @@
-// 1.21.1	2026-02-09T18:21:16.306586	Tags for minecraft:block mod id cavemansdragoniron
+// 1.21.1	2026-02-10T13:48:04.9307755	Tags for minecraft:block mod id cavemansdragoniron
+6a326ad832e099e7398c6b17986de02e7049861f data/cavemansdragoniron/tags/block/incorrect_for_dragon_iron_tool.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data/cavemansdragoniron/tags/block/needs_dragon_iron_tool.json
 28ad9b3f8f3db04ed71fc7fe36bffcaf3d90391f data/minecraft/tags/block/beacon_base_blocks.json
 673fff7e14d3f9015a2e0bee0b37bfd3feea7f8a data/minecraft/tags/block/dragon_immune.json
 e555d47a367bfa63346b40b9ed31414c81a72187 data/minecraft/tags/block/fences.json

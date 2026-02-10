@@ -88,10 +88,64 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dragon_iron_block", has(ModBlocks.DRAGON_IRON_BLOCK.get()))
                 .save(recipeOutput);
 
-        trapdoorBuilder(ModBlocks.DRAGON_IRON_TRAP_DOOR.get(), Ingredient.of(ModBlocks.DRAGON_IRON_BLOCK.get()))
+        trapdoorBuilder(ModBlocks.DRAGON_IRON_TRAP_DOOR.get(), Ingredient.of(ModItems.DRAGON_IRON_INGOT.get()))
                 .group("dragon_iron_block")
-                .unlockedBy("has_dragon_iron_block", has(ModBlocks.DRAGON_IRON_BLOCK.get()))
+                .unlockedBy("has_dragon_iron_ingot", has(ModItems.DRAGON_IRON_INGOT.get()))
                 .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.DRAGON_IRON_AXE.get())
+                .pattern("AA")
+                .pattern("AB")
+                .pattern(" B")
+                .define('A', ModItems.DRAGON_IRON_INGOT)
+                .define('B', Items.STICK)
+                .unlockedBy("has_dragon_iron_ingot", has(ModItems.DRAGON_IRON_INGOT))
+                .save(recipeOutput, "cavemansdragoniron:dragon_iron_axe_from_scratch");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.DRAGON_IRON_HAMMER.get())
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern(" B ")
+                .define('A', ModItems.DRAGON_IRON_INGOT)
+                .define('B', Items.STICK)
+                .unlockedBy("has_dragon_iron_ingot", has(ModItems.DRAGON_IRON_INGOT))
+                .save(recipeOutput, "cavemansdragoniron:dragon_iron_hammer_from_scratch");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.DRAGON_IRON_PICKAXE.get())
+                .pattern("AAA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', ModItems.DRAGON_IRON_INGOT)
+                .define('B', Items.STICK)
+                .unlockedBy("has_dragon_iron_ingot", has(ModItems.DRAGON_IRON_INGOT))
+                .save(recipeOutput, "cavemansdragoniron:dragon_iron_pickaxe_from_scratch");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.DRAGON_IRON_HOE.get())
+                .pattern("AA")
+                .pattern(" B")
+                .pattern(" B")
+                .define('A', ModItems.DRAGON_IRON_INGOT)
+                .define('B', Items.STICK)
+                .unlockedBy("has_dragon_iron_ingot", has(ModItems.DRAGON_IRON_INGOT))
+                .save(recipeOutput, "cavemansdragoniron:dragon_iron_hoe_from_scratch");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.DRAGON_IRON_SHOVEL.get())
+                .pattern("A")
+                .pattern("B")
+                .pattern("B")
+                .define('A', ModItems.DRAGON_IRON_INGOT)
+                .define('B', Items.STICK)
+                .unlockedBy("has_dragon_iron_ingot", has(ModItems.DRAGON_IRON_INGOT))
+                .save(recipeOutput, "cavemansdragoniron:dragon_iron_shovel_from_scratch");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.DRAGON_IRON_SWORD.get())
+                .pattern("A")
+                .pattern("A")
+                .pattern("B")
+                .define('A', ModItems.DRAGON_IRON_INGOT)
+                .define('B', Items.STICK)
+                .unlockedBy("has_dragon_iron_ingot", has(ModItems.DRAGON_IRON_INGOT))
+                .save(recipeOutput, "cavemansdragoniron:dragon_iron_sword_from_scratch");
 
     }
 }

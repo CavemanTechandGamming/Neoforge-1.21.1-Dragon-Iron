@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cavemansdragoniron:dragon_iron_trap_door"
+        "recipe": "cavemansdragoniron:dragon_iron_axe_from_scratch"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "cavemansdragoniron:dragon_iron_trap_door"
+      "cavemansdragoniron:dragon_iron_axe_from_scratch"
     ]
   }
 }

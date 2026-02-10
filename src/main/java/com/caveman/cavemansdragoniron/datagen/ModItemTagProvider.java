@@ -19,9 +19,27 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        // ===== Beacon payments =====
         tag(ItemTags.BEACON_PAYMENT_ITEMS)
-                .add(ModItems.DRAGON_IRON_NUGGET.get())
-                .add(ModItems.DRAGON_IRON_INGOT.get());
+                .add(ModItems.DRAGON_IRON_INGOT.get())
+                .add(ModItems.DRAGON_IRON_NUGGET.get());
+
+        // ===== Tool & weapon tags =====
+        tag(ItemTags.AXES)
+                .add(ModItems.DRAGON_IRON_AXE.get());
+
+        tag(ItemTags.HOES)
+                .add(ModItems.DRAGON_IRON_HOE.get());
+
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.DRAGON_IRON_PICKAXE.get());
+
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.DRAGON_IRON_SHOVEL.get());
+
+        tag(ItemTags.SWORDS)
+                .add(ModItems.DRAGON_IRON_SWORD.get());
+
 
     }
 }
