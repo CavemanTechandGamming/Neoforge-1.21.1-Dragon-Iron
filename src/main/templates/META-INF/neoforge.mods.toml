@@ -46,7 +46,17 @@ authors="Caveman117"
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Working on it
+Forged from the essence of the End itself, Dragon Iron introduces a true end-game progression tier to Minecraft. Harvest rare Dragon Iron Nuggets from Endermen, refine them into ingots, and unlock a complete ecosystem of powerful gear, functional blocks, and indestructible infrastructure.
+
+Dragon Iron equipment surpasses Netherite in strength and durability, offering superior tools, devastating weapons, and a full armor set designed for ultimate survival. Wearing the complete Dragon Iron armor set grants permanent Water Breathing, Fire Resistance, and Saturation, allowing you to thrive in even the most hostile environments without preparation.
+
+Beyond combat, Dragon Iron expands your building capabilities with a full architectural block set, including decorative and functional variants such as blocks, stairs, slabs, walls, fences, doors, trapdoors, pressure plates, and buttons. All Dragon Iron building materials are fully blast-proof, wither-proof, and dragon-proof, making them ideal for secure bases, vaults, and End-tier megastructures.
+
+The mod also introduces the Dragon Iron Furnace, an advanced furnace that smelts items twice as fast as a normal furnace without consuming any fuel, providing a permanent and highly efficient late-game smelting solution.
+
+Additional features include Dragon Glass blocks and panes for sleek, high-end decorative builds, as well as a new Dragon Smith villager profession specializing in Dragon Iron trades. For balance and customization, the Enderman drop rate for Dragon Iron Nuggets is fully configurable through the mod config file, allowing seamless integration into both vanilla-style and heavily modded progression systems.
+
+Dragon Iron is designed to feel like a natural extension of the End’s progression—rewarding players who conquer the late game with tools, armor, and building materials worthy of the End dimension itself.
 '''
 
 
