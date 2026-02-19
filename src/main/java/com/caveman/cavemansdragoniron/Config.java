@@ -28,6 +28,11 @@ public class Config {
             .comment("A list of items to log on common setup.")
             .defineListAllowEmpty("items", List.of("minecraft:iron_ingot"), () -> "", Config::validateItemName);
 
+    public static final ModConfigSpec.IntValue DRAGON_IRON_NUGGET_ENDERMAN_DROP_CHANCE_PERCENT = BUILDER
+            .comment("Base chance (0-100%) for Endermen to drop a dragon iron nugget when killed without Looting. Looting increases this chance by 10% per level (hardcoded). Default 10% is similar to zombified piglin gold nugget.")
+            .translation("config.cavemansdragoniron.common.dragonIronNuggetEndermanDropChancePercent")
+            .defineInRange("dragonIronNuggetEndermanDropChancePercent", 10, 0, 100);
+
     static final ModConfigSpec SPEC = BUILDER.build();
 
     private static boolean validateItemName(final Object obj) {

@@ -2,14 +2,11 @@ package com.caveman.cavemansdragoniron.datagen;
 
 import com.caveman.cavemansdragoniron.CavemansDragonIron;
 import com.caveman.cavemansdragoniron.item.ModItems;
-import com.caveman.cavemansdragoniron.loot.AddItemModifier;
+import com.caveman.cavemansdragoniron.loot.AddItemWithConfigChanceModifier;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.neoforged.neoforge.common.data.GlobalLootModifierProvider;
 import net.neoforged.neoforge.common.loot.LootTableIdCondition;
 
@@ -23,7 +20,7 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
     @Override
     protected void start() {
         this.add("dragon_iron_nugget_from_enderman",
-                        new AddItemModifier(new LootItemCondition[] {
+                        new AddItemWithConfigChanceModifier(new LootItemCondition[] {
                                 new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/enderman")).build()
                         }, ModItems.DRAGON_IRON_NUGGET.get()));
     }

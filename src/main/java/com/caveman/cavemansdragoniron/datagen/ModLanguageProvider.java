@@ -59,5 +59,14 @@ public class ModLanguageProvider extends LanguageProvider {
         // =====================
 
         add("creativetab.cavemansdragoniron.cavemans_dragon_iron_items", "Caveman's Dragon Iron");
+
+        // =====================
+        // CONFIG
+        // =====================
+
+        add("config.cavemansdragoniron.title", "Caveman's Dragon Iron Config");
+        add("config.cavemansdragoniron.common.dragonIronNuggetEndermanDropChancePercent", "Dragon Iron Nugget Drop Chance (%)");
+        add("config.cavemansdragoniron.common.dragonIronNuggetEndermanDropChancePercent.tooltip", "Base chance (0–100%%) for Endermen to drop a dragon iron nugget when killed without Looting. Looting increases this chance by 10%% per level. Default 10%% is similar to zombified piglin gold nugget.");
+        add("config.cavemansdragoniron.common.dragonIronNuggetEndermanDropChancePercent.tooltipShort", "Enderman drop chance of dragon iron nugget");
     }
 }
