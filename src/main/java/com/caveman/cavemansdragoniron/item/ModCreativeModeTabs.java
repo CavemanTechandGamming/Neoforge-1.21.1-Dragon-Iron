@@ -58,6 +58,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DRAGON_IRON_STAIRS);
                         output.accept(ModBlocks.DRAGON_IRON_TRAP_DOOR);
                         output.accept(ModBlocks.DRAGON_IRON_WALL);
+                        output.accept(ModBlocks.DRAGON_IRON_FURNACE);
 
 
                     }))

@@ -1,9 +1,11 @@
 package com.caveman.cavemansdragoniron;
 
 import com.caveman.cavemansdragoniron.block.ModBlocks;
+import com.caveman.cavemansdragoniron.block.entity.ModBlockEntities;
 import com.caveman.cavemansdragoniron.item.ModCreativeModeTabs;
 import com.caveman.cavemansdragoniron.item.ModItems;
 import com.caveman.cavemansdragoniron.loot.ModLootModifiers;
+import com.caveman.cavemansdragoniron.menu.ModMenuTypes;
 import com.caveman.cavemansdragoniron.villager.ModVillagers;
 import org.slf4j.Logger;
 
@@ -44,6 +46,8 @@ public class CavemansDragonIron {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
         ModLootModifiers.register(modEventBus);
         ModVillagers.register(modEventBus);
 

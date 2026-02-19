@@ -38,6 +38,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.DRAGON_IRON_FENCE_GATE.get());
         dropSelf(ModBlocks.DRAGON_IRON_WALL.get());
         dropSelf(ModBlocks.DRAGON_IRON_TRAP_DOOR.get());
+        dropSelf(ModBlocks.DRAGON_IRON_FURNACE.get());
 
         //How to deal with doors because they're weird.
         add(ModBlocks.DRAGON_IRON_DOOR.get(), block -> createDoorTable(ModBlocks.DRAGON_IRON_DOOR.get()));

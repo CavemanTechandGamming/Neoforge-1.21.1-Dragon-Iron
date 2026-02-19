@@ -46,6 +46,7 @@ public class ModLanguageProvider extends LanguageProvider {
         add("block.cavemansdragoniron.dragon_iron_trap_door", "Dragon Iron Trapdoor");
         add("block.cavemansdragoniron.dragon_iron_wall", "Dragon Iron Wall");
         add("block.cavemansdragoniron.fancy_dragon_iron_block", "Fancy Dragon Iron Block");
+        add("block.cavemansdragoniron.dragon_iron_furnace", "Dragon Iron Furnace");
 
         // =====================
         // ENTITY

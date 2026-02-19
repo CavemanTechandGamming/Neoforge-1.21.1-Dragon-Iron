@@ -4,7 +4,9 @@ import com.caveman.cavemansdragoniron.CavemansDragonIron;
 import com.caveman.cavemansdragoniron.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -50,7 +52,21 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.DRAGON_IRON_FENCE_GATE);
         blockItem(ModBlocks.DRAGON_IRON_TRAP_DOOR, "_bottom");
 
-
+        // Dragon iron furnace: orientable, front = dragon glass block (placeholder until custom texture)
+        ResourceLocation dragonIronTexture = blockTexture(ModBlocks.DRAGON_IRON_BLOCK.get());
+        ModelFile furnaceUnlit = models().orientable("dragon_iron_furnace", dragonIronTexture, dragonGlassTexture, dragonIronTexture);
+        ModelFile furnaceLit = models().orientable("dragon_iron_furnace_on", dragonIronTexture, dragonGlassTexture, dragonIronTexture);
+        // Match vanilla furnace: orientable model's front faces north by default; rotation maps block facing to model (north→0, south→180, east→90, west→270)
+        getVariantBuilder(ModBlocks.DRAGON_IRON_FURNACE.get())
+                .forAllStates(state -> {
+                    int yRot = (int) (state.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() + 180) % 360;
+                    boolean lit = state.getValue(BlockStateProperties.LIT);
+                    return ConfiguredModel.builder()
+                            .modelFile(lit ? furnaceLit : furnaceUnlit)
+                            .rotationY(yRot)
+                            .build();
+                });
+        simpleBlockItem(ModBlocks.DRAGON_IRON_FURNACE.get(), new ModelFile.UncheckedModelFile(modLoc("block/dragon_iron_furnace")));
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

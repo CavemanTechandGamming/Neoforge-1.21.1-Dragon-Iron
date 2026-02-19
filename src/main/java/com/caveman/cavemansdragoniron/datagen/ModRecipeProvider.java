@@ -208,5 +208,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dragon_glass_block", has(ModBlocks.DRAGON_GLASS_BLOCK.get()))
                 .save(recipeOutput);
 
+        // Dragon iron furnace: 8 dragon iron blocks around a furnace
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.DRAGON_IRON_FURNACE.get())
+                .pattern("DDD")
+                .pattern("DFD")
+                .pattern("DDD")
+                .define('D', ModBlocks.DRAGON_IRON_BLOCK.get())
+                .define('F', Blocks.FURNACE)
+                .unlockedBy("has_furnace", has(Blocks.FURNACE))
+                .unlockedBy("has_dragon_iron_block", has(ModBlocks.DRAGON_IRON_BLOCK.get()))
+                .save(recipeOutput);
     }
 }

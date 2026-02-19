@@ -32,7 +32,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DRAGON_IRON_SLAB.get())
                 .add(ModBlocks.DRAGON_IRON_STAIRS.get())
                 .add(ModBlocks.DRAGON_IRON_TRAP_DOOR.get())
-                .add(ModBlocks.DRAGON_IRON_WALL.get());
+                .add(ModBlocks.DRAGON_IRON_WALL.get())
+                .add(ModBlocks.DRAGON_IRON_FURNACE.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.DRAGON_IRON_BLOCK.get())
@@ -47,7 +48,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DRAGON_IRON_SLAB.get())
                 .add(ModBlocks.DRAGON_IRON_STAIRS.get())
                 .add(ModBlocks.DRAGON_IRON_TRAP_DOOR.get())
-                .add(ModBlocks.DRAGON_IRON_WALL.get());
+                .add(ModBlocks.DRAGON_IRON_WALL.get())
+                .add(ModBlocks.DRAGON_IRON_FURNACE.get());
 
         tag(BlockTags.BEACON_BASE_BLOCKS)
                 .add(ModBlocks.DRAGON_IRON_BLOCK.get())
@@ -66,7 +68,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DRAGON_IRON_SLAB.get())
                 .add(ModBlocks.DRAGON_IRON_STAIRS.get())
                 .add(ModBlocks.DRAGON_IRON_TRAP_DOOR.get())
-                .add(ModBlocks.DRAGON_IRON_WALL.get());
+                .add(ModBlocks.DRAGON_IRON_WALL.get())
+                .add(ModBlocks.DRAGON_IRON_FURNACE.get());
 
         tag(BlockTags.WITHER_IMMUNE)
                 .add(ModBlocks.DRAGON_IRON_BLOCK.get())
@@ -81,7 +84,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DRAGON_IRON_SLAB.get())
                 .add(ModBlocks.DRAGON_IRON_STAIRS.get())
                 .add(ModBlocks.DRAGON_IRON_TRAP_DOOR.get())
-                .add(ModBlocks.DRAGON_IRON_WALL.get());
+                .add(ModBlocks.DRAGON_IRON_WALL.get())
+                .add(ModBlocks.DRAGON_IRON_FURNACE.get());
 
         tag(BlockTags.FENCES)
                 .add(ModBlocks.DRAGON_IRON_FENCE.get());

@@ -129,6 +129,15 @@ public class ModBlocks {
                     .noOcclusion()
             ));
 
+    public static final DeferredBlock<DragonIronFurnaceBlock> DRAGON_IRON_FURNACE = registerBlock("dragon_iron_furnace",
+            () -> new DragonIronFurnaceBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.METAL)
+                    .strength(20f, 2400f)
+                    .requiresCorrectToolForDrops()
+                    .pushReaction(PushReaction.IGNORE)
+                    .lightLevel(state -> state.getValue(net.minecraft.world.level.block.state.properties.BlockStateProperties.LIT) ? 13 : 0)
+            ));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
