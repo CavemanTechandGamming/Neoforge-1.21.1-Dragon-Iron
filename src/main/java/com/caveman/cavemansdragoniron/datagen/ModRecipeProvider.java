@@ -200,5 +200,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dragon_iron_ingot", has(ModItems.DRAGON_IRON_INGOT))
                 .save(recipeOutput);
 
+        // Dragon glass pane: 6 dragon glass blocks in 2 columns (vanilla glass pane pattern)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRAGON_GLASS_PANE.get(), 16)
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModBlocks.DRAGON_GLASS_BLOCK.get())
+                .unlockedBy("has_dragon_glass_block", has(ModBlocks.DRAGON_GLASS_BLOCK.get()))
+                .save(recipeOutput);
+
     }
 }

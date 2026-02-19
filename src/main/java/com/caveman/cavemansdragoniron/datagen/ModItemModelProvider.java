@@ -55,6 +55,10 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         // ===== Block items =====
         basicItem(ModBlocks.DRAGON_IRON_DOOR.asItem());
+        
+        // ===== Glass pane item (points directly to block texture, like vanilla) =====
+        withExistingParent(ModBlocks.DRAGON_GLASS_PANE.getId().getPath(), mcLoc("item/generated"))
+                .texture("layer0", ResourceLocation.fromNamespaceAndPath(CavemansDragonIron.MOD_ID, "block/dragon_glass_block"));
 
         // ===== Block variants (use block texture) =====
         buttonItem(ModBlocks.DRAGON_IRON_BUTTON, ModBlocks.DRAGON_IRON_BLOCK);

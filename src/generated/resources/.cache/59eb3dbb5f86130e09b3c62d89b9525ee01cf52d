@@ -1,5 +1,6 @@
-// 1.21.1	2026-02-16T15:39:25.9768421	Loot Tables
+// 1.21.1	2026-02-19T15:08:47.77868	Loot Tables
 8b29852782bc67efdd2aeda4d921fd6c5e57f6fc data/cavemansdragoniron/loot_table/blocks/dragon_glass_block.json
+80a4e4920a278859337f8a8cc1e463d09198f3dd data/cavemansdragoniron/loot_table/blocks/dragon_glass_pane.json
 43bede5791fcfc99195c4b7edb7ac836f08a73d9 data/cavemansdragoniron/loot_table/blocks/dragon_iron_block.json
 08ef13f94751aace47cfed63e769319d8ee173bd data/cavemansdragoniron/loot_table/blocks/dragon_iron_button.json
 79b268fee1936ed13d853564d639a131fcf39574 data/cavemansdragoniron/loot_table/blocks/dragon_iron_door.json

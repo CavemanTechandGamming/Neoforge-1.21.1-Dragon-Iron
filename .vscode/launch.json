@@ -1,0 +1,93 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Client",
+      "presentation": {
+        "group": "Mod Development - Neoforge-1.21.1-Dragon-Iron",
+        "order": 0
+      },
+      "projectName": "Neoforge-1.21.1-Dragon-Iron",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\doom1\\IdeaProjects\\Neoforge-1.21.1-Dragon-Iron\\build\\moddev\\clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\doom1\\IdeaProjects\\Neoforge-1.21.1-Dragon-Iron\\build\\moddev\\clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dcavemansdragoniron%%C:\\Users\\doom1\\IdeaProjects\\Neoforge-1.21.1-Dragon-Iron\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Data",
+      "presentation": {
+        "group": "Mod Development - Neoforge-1.21.1-Dragon-Iron",
+        "order": 1
+      },
+      "projectName": "Neoforge-1.21.1-Dragon-Iron",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\doom1\\IdeaProjects\\Neoforge-1.21.1-Dragon-Iron\\build\\moddev\\dataRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\doom1\\IdeaProjects\\Neoforge-1.21.1-Dragon-Iron\\build\\moddev\\dataRunVmArgs.txt",
+        "-Dfml.modFolders\u003dcavemansdragoniron%%C:\\Users\\doom1\\IdeaProjects\\Neoforge-1.21.1-Dragon-Iron\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "GameTestServer",
+      "presentation": {
+        "group": "Mod Development - Neoforge-1.21.1-Dragon-Iron",
+        "order": 2
+      },
+      "projectName": "Neoforge-1.21.1-Dragon-Iron",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\doom1\\IdeaProjects\\Neoforge-1.21.1-Dragon-Iron\\build\\moddev\\gameTestServerRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\doom1\\IdeaProjects\\Neoforge-1.21.1-Dragon-Iron\\build\\moddev\\gameTestServerRunVmArgs.txt",
+        "-Dfml.modFolders\u003dcavemansdragoniron%%C:\\Users\\doom1\\IdeaProjects\\Neoforge-1.21.1-Dragon-Iron\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Server",
+      "presentation": {
+        "group": "Mod Development - Neoforge-1.21.1-Dragon-Iron",
+        "order": 3
+      },
+      "projectName": "Neoforge-1.21.1-Dragon-Iron",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\doom1\\IdeaProjects\\Neoforge-1.21.1-Dragon-Iron\\build\\moddev\\serverRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\doom1\\IdeaProjects\\Neoforge-1.21.1-Dragon-Iron\\build\\moddev\\serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dcavemansdragoniron%%C:\\Users\\doom1\\IdeaProjects\\Neoforge-1.21.1-Dragon-Iron\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    }
+  ]
+}

@@ -25,6 +25,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 .ao(false);
         simpleBlockWithItem(ModBlocks.DRAGON_GLASS_BLOCK.get(), dragonGlassModel);
 
+        // Dragon glass pane: same texture as block, translucent render type
+        ResourceLocation dragonGlassTexture = blockTexture(ModBlocks.DRAGON_GLASS_BLOCK.get());
+        paneBlockWithRenderType(ModBlocks.DRAGON_GLASS_PANE.get(), dragonGlassTexture, dragonGlassTexture,
+                ResourceLocation.fromNamespaceAndPath("minecraft", "translucent"));
+        // Item model is handled in ModItemModelProvider (points directly to block texture)
+
         stairsBlock(ModBlocks.DRAGON_IRON_STAIRS.get(), blockTexture(ModBlocks.DRAGON_IRON_BLOCK.get()));
         slabBlock(ModBlocks.DRAGON_IRON_SLAB.get(), blockTexture(ModBlocks.DRAGON_IRON_BLOCK.get()), blockTexture(ModBlocks.DRAGON_IRON_BLOCK.get()));
 

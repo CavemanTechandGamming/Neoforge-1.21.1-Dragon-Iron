@@ -48,6 +48,7 @@ public class ModCreativeModeTabs {
 
                         // ===== Blocks =====
                         output.accept(ModBlocks.DRAGON_GLASS_BLOCK);
+                        output.accept(ModBlocks.DRAGON_GLASS_PANE);
                         output.accept(ModBlocks.DRAGON_IRON_BUTTON);
                         output.accept(ModBlocks.DRAGON_IRON_DOOR);
                         output.accept(ModBlocks.DRAGON_IRON_FENCE);

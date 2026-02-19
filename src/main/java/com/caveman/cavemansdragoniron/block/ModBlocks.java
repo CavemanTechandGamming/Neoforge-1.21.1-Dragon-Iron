@@ -50,7 +50,18 @@ public class ModBlocks {
                     .isViewBlocking((state, level, pos) -> false)
             ));
 
-
+    public static final DeferredBlock<IronBarsBlock> DRAGON_GLASS_PANE = registerBlock("dragon_glass_pane",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.GLASS)
+                    .strength(20f, 2400f)
+                    .requiresCorrectToolForDrops()
+                    .pushReaction(PushReaction.IGNORE)
+                    .noOcclusion()
+                    .isValidSpawn((state, level, pos, entity) -> false)
+                    .isRedstoneConductor((state, level, pos) -> false)
+                    .isSuffocating((state, level, pos) -> false)
+                    .isViewBlocking((state, level, pos) -> false)
+            ));
 
     public static final DeferredBlock<StairBlock> DRAGON_IRON_STAIRS = registerBlock("dragon_iron_stairs",
             () -> new StairBlock(ModBlocks.DRAGON_IRON_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.of()
