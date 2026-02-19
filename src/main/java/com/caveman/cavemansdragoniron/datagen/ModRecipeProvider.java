@@ -5,9 +5,12 @@ import com.caveman.cavemansdragoniron.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.concurrent.CompletableFuture;
@@ -178,6 +181,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.DRAGON_IRON_INGOT)
                 .unlockedBy("has_dragon_iron_ingot", has(ModItems.DRAGON_IRON_INGOT))
                 .save(recipeOutput, "cavemansdragoniron:dragon_iron_boots_from_scratch");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FANCY_DRAGON_IRON_BLOCK.get())
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .define('B', ModBlocks.DRAGON_IRON_BLOCK)
+                .define('A', Items.GOLD_INGOT)
+                .unlockedBy("has_dragon_iron_ingot", has(ModItems.DRAGON_IRON_INGOT))
+                .save(recipeOutput, "cavemansdragoniron:dragon_iron_fancy_block");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRAGON_GLASS_BLOCK.get())
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .define('B', ModItems.DRAGON_IRON_INGOT)
+                .define('A', Blocks.GLASS)
+                .unlockedBy("has_dragon_iron_ingot", has(ModItems.DRAGON_IRON_INGOT))
+                .save(recipeOutput);
 
     }
 }

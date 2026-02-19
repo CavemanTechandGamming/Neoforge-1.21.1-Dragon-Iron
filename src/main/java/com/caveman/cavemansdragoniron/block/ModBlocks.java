@@ -9,6 +9,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -27,6 +28,28 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .pushReaction(PushReaction.IGNORE)
             ));
+
+    public static final DeferredBlock<Block> FANCY_DRAGON_IRON_BLOCK = registerBlock("fancy_dragon_iron_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.METAL)
+                    .strength(20f, 2400f)
+                    .requiresCorrectToolForDrops()
+                    .pushReaction(PushReaction.IGNORE)
+            ));
+
+    public static final DeferredBlock<Block> DRAGON_GLASS_BLOCK = registerBlock("dragon_glass_block",
+            () -> new TintedGlassBlock(BlockBehaviour.Properties.of()
+                    .sound(SoundType.GLASS)
+                    .strength(20f, 2400f)
+                    .requiresCorrectToolForDrops()
+                    .pushReaction(PushReaction.IGNORE)
+                    .noOcclusion()
+                    .isValidSpawn((state, level, pos, entity) -> false)
+                    .isRedstoneConductor((state, level, pos) -> false)
+                    .isSuffocating((state, level, pos) -> false)
+                    .isViewBlocking((state, level, pos) -> false)
+            ));
+
 
 
     public static final DeferredBlock<StairBlock> DRAGON_IRON_STAIRS = registerBlock("dragon_iron_stairs",

@@ -3,6 +3,7 @@ package com.caveman.cavemansdragoniron.datagen;
 import com.caveman.cavemansdragoniron.CavemansDragonIron;
 import com.caveman.cavemansdragoniron.block.ModBlocks;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -16,6 +17,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.DRAGON_IRON_BLOCK);
+        blockWithItem(ModBlocks.FANCY_DRAGON_IRON_BLOCK);
+        // Dragon glass: translucent, no ambient occlusion (lighter shadow like vanilla glass)
+        ModelFile dragonGlassModel = models().withExistingParent("dragon_glass_block", ResourceLocation.fromNamespaceAndPath("minecraft", "block/cube_all"))
+                .texture("all", blockTexture(ModBlocks.DRAGON_GLASS_BLOCK.get()))
+                .renderType(ResourceLocation.fromNamespaceAndPath("minecraft", "translucent"))
+                .ao(false);
+        simpleBlockWithItem(ModBlocks.DRAGON_GLASS_BLOCK.get(), dragonGlassModel);
 
         stairsBlock(ModBlocks.DRAGON_IRON_STAIRS.get(), blockTexture(ModBlocks.DRAGON_IRON_BLOCK.get()));
         slabBlock(ModBlocks.DRAGON_IRON_SLAB.get(), blockTexture(ModBlocks.DRAGON_IRON_BLOCK.get()), blockTexture(ModBlocks.DRAGON_IRON_BLOCK.get()));

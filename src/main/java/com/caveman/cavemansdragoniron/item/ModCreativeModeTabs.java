@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.DRAGON_IRON_NUGGET);
                         output.accept(ModItems.DRAGON_IRON_INGOT);
                         output.accept(ModBlocks.DRAGON_IRON_BLOCK);
+                        output.accept(ModBlocks.FANCY_DRAGON_IRON_BLOCK);
 
 
                         // ===== Weapons & tools =====
@@ -46,6 +47,7 @@ public class ModCreativeModeTabs {
 
 
                         // ===== Blocks =====
+                        output.accept(ModBlocks.DRAGON_GLASS_BLOCK);
                         output.accept(ModBlocks.DRAGON_IRON_BUTTON);
                         output.accept(ModBlocks.DRAGON_IRON_DOOR);
                         output.accept(ModBlocks.DRAGON_IRON_FENCE);

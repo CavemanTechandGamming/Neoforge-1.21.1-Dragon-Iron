@@ -1,6 +1,8 @@
 {
   "values": [
     "cavemansdragoniron:dragon_iron_block",
+    "cavemansdragoniron:fancy_dragon_iron_block",
+    "cavemansdragoniron:dragon_glass_block",
     "cavemansdragoniron:dragon_iron_button",
     "cavemansdragoniron:dragon_iron_door",
     "cavemansdragoniron:dragon_iron_fence",

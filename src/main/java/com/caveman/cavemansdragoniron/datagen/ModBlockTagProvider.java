@@ -21,6 +21,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.DRAGON_IRON_BLOCK.get())
+                .add(ModBlocks.FANCY_DRAGON_IRON_BLOCK.get())
+                .add(ModBlocks.DRAGON_GLASS_BLOCK.get())
                 .add(ModBlocks.DRAGON_IRON_BUTTON.get())
                 .add(ModBlocks.DRAGON_IRON_DOOR.get())
                 .add(ModBlocks.DRAGON_IRON_FENCE.get())
@@ -33,6 +35,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.DRAGON_IRON_BLOCK.get())
+                .add(ModBlocks.FANCY_DRAGON_IRON_BLOCK.get())
+                .add(ModBlocks.DRAGON_GLASS_BLOCK.get())
                 .add(ModBlocks.DRAGON_IRON_BUTTON.get())
                 .add(ModBlocks.DRAGON_IRON_DOOR.get())
                 .add(ModBlocks.DRAGON_IRON_FENCE.get())
@@ -44,10 +48,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DRAGON_IRON_WALL.get());
 
         tag(BlockTags.BEACON_BASE_BLOCKS)
-                .add(ModBlocks.DRAGON_IRON_BLOCK.get());
+                .add(ModBlocks.DRAGON_IRON_BLOCK.get())
+                .add(ModBlocks.FANCY_DRAGON_IRON_BLOCK.get());
 
         tag(BlockTags.DRAGON_IMMUNE)
                 .add(ModBlocks.DRAGON_IRON_BLOCK.get())
+                .add(ModBlocks.FANCY_DRAGON_IRON_BLOCK.get())
+                .add(ModBlocks.DRAGON_GLASS_BLOCK.get())
                 .add(ModBlocks.DRAGON_IRON_BUTTON.get())
                 .add(ModBlocks.DRAGON_IRON_DOOR.get())
                 .add(ModBlocks.DRAGON_IRON_FENCE.get())
@@ -60,6 +67,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.WITHER_IMMUNE)
                 .add(ModBlocks.DRAGON_IRON_BLOCK.get())
+                .add(ModBlocks.FANCY_DRAGON_IRON_BLOCK.get())
+                .add(ModBlocks.DRAGON_GLASS_BLOCK.get())
                 .add(ModBlocks.DRAGON_IRON_BUTTON.get())
                 .add(ModBlocks.DRAGON_IRON_DOOR.get())
                 .add(ModBlocks.DRAGON_IRON_FENCE.get())

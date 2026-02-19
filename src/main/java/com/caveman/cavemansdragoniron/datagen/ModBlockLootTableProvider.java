@@ -28,6 +28,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         //Blocks that drop themselves.
         dropSelf(ModBlocks.DRAGON_IRON_BLOCK.get());
+        dropSelf(ModBlocks.FANCY_DRAGON_IRON_BLOCK.get());
+        dropSelf(ModBlocks.DRAGON_GLASS_BLOCK.get());
         dropSelf(ModBlocks.DRAGON_IRON_STAIRS.get());
         dropSelf(ModBlocks.DRAGON_IRON_BUTTON.get());
         dropSelf(ModBlocks.DRAGON_IRON_PRESSURE_PLATE.get());
