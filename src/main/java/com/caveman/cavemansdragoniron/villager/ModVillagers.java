@@ -20,7 +20,7 @@ public class ModVillagers {
 
 
     public static final Holder<PoiType> DRAGON_SMITH_POI = POI_TYPES.register("dragon_smith_poi",
-            () -> new PoiType(ImmutableSet.copyOf(ModBlocks.DRAGON_IRON_BLOCK.get().getStateDefinition().getPossibleStates()), 1, 1));
+            () -> new PoiType(ImmutableSet.copyOf(ModBlocks.DRAGON_IRON_FURNACE.get().getStateDefinition().getPossibleStates()), 1, 1));
 
     public static final Holder<VillagerProfession> DRAGON_SMITH = VILLAGER_PROFESSIONS.register("dragon_smith",
             () -> new VillagerProfession("dragon_smith", holder -> holder.value() == DRAGON_SMITH_POI.value(),
